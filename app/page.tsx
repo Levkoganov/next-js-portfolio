@@ -1,5 +1,6 @@
-import Introduction from "./landing_page/Introduction";
+import Introduction from "./home/introduction/Introduction";
 
+Introduction;
 export default function Home() {
   return (
     <main>

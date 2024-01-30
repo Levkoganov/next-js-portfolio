@@ -37,13 +37,15 @@ const Geometries = () => {
     new THREE.MeshStandardMaterial({ color: 0x417efd, roughness: 0.3, metalness: 0.5 }), // blue
     new THREE.MeshStandardMaterial({ color: 0x2bc8c8, roughness: 0.1, metalness: 0.5 }), // paleblue
     new THREE.MeshStandardMaterial({ color: 0x8ee787, roughness: 0.3, metalness: 0.5 }), // green
-    // new THREE.MeshStandardMaterial({ color: 0x211b32, roughness: 0.5, metalness: 0.5 }), // red
   ];
+
+  const soundEffects = [new Audio("/sounds/knock1.ogg"), new Audio("/sounds/knock2.ogg")];
 
   return geometries.map(({ position, rate, geometry }) => (
     <Geometry
       key={JSON.stringify(position)}
       position={position.multiplyScalar(2)}
+      soundEffects={soundEffects}
       geometry={geometry}
       materials={materials}
       rate={rate}

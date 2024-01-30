@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { ContactShadows, Environment } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-import Geometries from "../components/Geometries";
+import Geometries from "./Geometries";
 import { Vector3 } from "three";
 
 const Shapes = () => {

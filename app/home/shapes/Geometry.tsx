@@ -7,10 +7,11 @@ import { useGSAP } from "@gsap/react";
 interface IProps {
   rate: number;
   position: Vector3;
+  soundEffects: HTMLAudioElement[];
   geometry: any; // TODO: fix any
   materials: (THREE.MeshNormalMaterial | THREE.MeshStandardMaterial)[];
 }
-const Geometry = ({ rate, position, geometry, materials }: IProps) => {
+const Geometry = ({ rate, position, geometry, materials, soundEffects }: IProps) => {
   const meshRef = useRef<any>(null);
   const [visible, setVisible] = useState(false);
 
@@ -23,6 +24,8 @@ const Geometry = ({ rate, position, geometry, materials }: IProps) => {
   // TODO: fix any
   function handleClick(e: any) {
     const mesh = e.object;
+
+    gsap.utils.random(soundEffects).play();
 
     gsap.to(mesh.rotation, {
       x: `+=${gsap.utils.random(0, 2)}`,

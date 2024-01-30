@@ -2,10 +2,10 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import React, { useRef } from "react";
-import Bounded from "../components/Bounded";
-import RenderNameLetters from "../components/RenderNameLetters";
-import { firstName, lastName, tagLine, textDescription } from "../../constants";
-import Shapes from "./Shapes";
+import Bounded from "../../components/Bounded";
+import RenderNameLetters from "./RenderNameLetters";
+import { firstName, lastName, tagLine, textDescription } from "../../../constants";
+import Shapes from "../shapes/Shapes";
 
 const Introduction = () => {
   const component = useRef(null);
@@ -53,13 +53,13 @@ const Introduction = () => {
         <Shapes />
         <div className="col-start-1 md:row-start-1 select-none">
           <h1
-            className="mb-8 text-[clamp(3rem,17vmin,17rem)] font-extrabold leading-none tracking-tighter"
+            className="mb-8 xl:text-[clamp(3rem,15vmin,15rem)] text-8xl font-extrabold leading-none tracking-tighter"
             aria-label={`${firstName} ${lastName}`}
           >
-            <span className="block text-slate-300">
+            <span className="block text-slate-300 ">
               <RenderNameLetters name={firstName} groupName={"firstName"} />
             </span>
-            <span className="-mt-[.2em] text-slate-500 ">
+            <span className="-mt-[.2em] text-slate-500">
               <RenderNameLetters name={lastName} groupName={"lastName"} />
             </span>
           </h1>
