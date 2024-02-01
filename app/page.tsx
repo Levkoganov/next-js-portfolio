@@ -1,9 +1,11 @@
+import Header from "./components/Header";
+import Nav from "./components/Nav";
 import Introduction from "./home/introduction/Introduction";
 
-Introduction;
 export default function Home() {
   return (
-    <main>
+    <main className="w-full">
+      <Header />
       <Introduction />
     </main>
   );
