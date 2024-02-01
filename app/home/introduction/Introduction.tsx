@@ -49,7 +49,10 @@ const Introduction = () => {
 
   return (
     <Bounded ref={component}>
-      <div className="grid min-h-[100vh] grid-cols-1 md:grid-cols-2 items-center">
+      <div
+        id="home"
+        className="grid min-h-[100vh] grid-cols-1 md:grid-cols-2 items-center"
+      >
         <Shapes />
         <div className="col-start-1 md:row-start-1 select-none">
           <h1
