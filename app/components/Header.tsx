@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 h-20 px-6 mx-auto flex w-full items-center justify-between">
+    <header className="sticky top-0 z-50 h-20 px-6 mx-auto flex w-full items-center justify-between backdrop-blur	">
       <div className="flex gap-6">
         <Link
           href={"https://www.linkedin.com/in/lev-koganov-b4a045211/"}
