@@ -15,7 +15,7 @@ const About = () => {
       <div id="about" className="min-h-[100vh]">
         <HorizontalRow pageName={"about"} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Description />
           <div className="flex flex-col justify-between gap-8">
             <Technologies name="Core" techs={coreTech} Icon={FaFileCode} />
