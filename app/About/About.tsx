@@ -13,7 +13,7 @@ const About = () => {
   return (
     <Bounded>
       <div id="about" className="min-h-[100vh]">
-        <HorizontalRow pageName={"about"} />
+        <HorizontalRow pageName={"about"} isRowReverse={false} color={1} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Description />
