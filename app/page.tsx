@@ -1,4 +1,4 @@
-import About from "./About/About";
+import About from "./about/About";
 import Header from "./components/Header";
 import Introduction from "./home/introduction/Introduction";
 
