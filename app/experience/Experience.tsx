@@ -15,6 +15,7 @@ const Experience = () => {
           {experience.map((item) => (
             <Sectors
               key={item.id}
+              id={item.id}
               companyName={item.companyName}
               workDuration={item.workDuration}
               title={item.title}
