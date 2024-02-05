@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
-import style from "./style/card.module.css";
 
 interface IStack {
   icons: any[];
@@ -20,13 +19,11 @@ const Card = ({ header, description, stack, link }: IProps) => {
   const { icons, names } = stack;
 
   return (
-    <div
-      className={`${style.cardshadow} card rounded-none border-x border-black bg-slate-800  hover:-translate-y-3 hover:-translate-x-3 transition duration-200 ease-in-out`}
-    >
+    <div className="cardshadow card rounded-none border-x border-black bg-slate-800  hover:-translate-y-3 hover:-translate-x-3 transition duration-200 ease-in-out">
       <div className="card-body items-center gap-8">
         <h2
           className="card-title bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500
-           bg-clip-text text-3xl font-bold  text-transparent"
+           bg-clip-text text-3xl font-bold text-transparent"
         >
           {header}
         </h2>
