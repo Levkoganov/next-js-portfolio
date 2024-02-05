@@ -89,3 +89,71 @@ export const projectsInfo = [
     link: "https://github.com/Levkoganov/mini_facebook",
   },
 ];
+
+interface IExperience {
+  id: number;
+  companyName: string;
+  workDuration: string;
+  title: string;
+  location: string;
+  description: string;
+  companywebsite?: string;
+  technologies: string[];
+}
+
+export const experience: IExperience[] = [
+  {
+    id: 1,
+    companyName: "matrix",
+    workDuration: "2023",
+    title: "Frontend Developer",
+    location: "Israel",
+    description:
+      "Developing a interface from scratch for a Bank clearing center. Working on a tight sceduale according to specification.",
+    technologies: ["React", "TypeScript", "Mobx", "Figma", "GitLab", "Git", "Jira"],
+  },
+  {
+    id: 2,
+    companyName: "wizdome",
+    workDuration: "2022 - 2023",
+    title: "Fullstack Developer",
+    location: "Israel",
+    description:
+      "Developed a user interface for a cyber security company. Integtating with a complex cyber security engine that warns and prevent security breaches.",
+    technologies: [
+      "React",
+      "Node.JS",
+      "Express",
+      "Redux",
+      "MongoDB",
+      "TypeScript",
+      "Docker",
+      "GitHub",
+      "Git",
+      "Jira",
+      "Linux",
+    ],
+  },
+  {
+    id: 3,
+    companyName: "PlaySmart",
+    workDuration: "2021 - 2022",
+    title: "Fullstack Developer",
+    location: "Israel",
+    description:
+      "Creating a web gaming system from scratch using a high veraity of technologies. Workig closly with the CRM team, implementing web serivies, creating an interactive interface and REST API.",
+    companywebsite: "https://www.playsmart.co.il/games-home/",
+    technologies: [
+      "Node.JS",
+      "PHP",
+      "JavaScript",
+      "JQuery",
+      "Wordpress",
+      "MongoDB",
+      "MySQL",
+      "BitBucket",
+      "Git",
+      "Jira",
+    ],
+  },
+];
