@@ -1,5 +1,7 @@
 import About from "./about/About";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Contact from "./contact/Contact";
 import Experience from "./experience/Experience";
 import Introduction from "./home/introduction/Introduction";
 import Projects from "./projects/Projects";
@@ -12,6 +14,8 @@ export default function Home() {
       <About />
       <Projects />
       <Experience />
+      <Contact />
+      <Footer />
     </main>
   );
 }
