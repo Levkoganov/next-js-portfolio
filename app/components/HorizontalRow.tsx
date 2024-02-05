@@ -2,17 +2,12 @@ import React from "react";
 
 interface IPros {
   pageName: string;
-  isRowReverse: boolean;
-  color?: string;
 }
 
-const HorizontalRow = ({ pageName, isRowReverse }: IPros) => {
-  const rowReverseClassName = `flex gap-4 items-center py-20 
-  ${isRowReverse && "flex-row-reverse"}`;
-
+const HorizontalRow = ({ pageName }: IPros) => {
   return (
-    <div className={rowReverseClassName}>
-      <div className="w-8 h-px bg-slate-500 opacity-70"></div>
+    <div className="flex gap-4 items-center py-20 ">
+      <div className="md:w-8 h-px bg-slate-500 opacity-70"></div>
       <h1
         className={`bg-gradient-to-tr from-slate-500 via-slate-200 to-slate-500
          bg-clip-text text-5xl font-extrabold uppercase tracking-[.1em] text-transparent`}
