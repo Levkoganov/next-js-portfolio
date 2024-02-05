@@ -28,7 +28,7 @@ const Sectors = ({
       <div className="collapse collapse-arrow join-item">
         <input type="radio" name="my-accordion-4" defaultChecked={id === 1} />
         <div className="collapse-title text-xl font-medium">
-          <div className="flex justify-between text-3xl font-bold flex-col text-slate-300">
+          <div className="flex justify-between md:text-3xl font-bold flex-col text-slate-300">
             <div className="flex justify-between">
               <h1>{companyName}</h1>
               <h1>{workDuration}</h1>

@@ -11,7 +11,7 @@ const HorizontalRow = ({ pageName }: IPros) => {
       {pageName && (
         <h1
           className={`bg-gradient-to-tr from-slate-500 via-slate-200 to-slate-500
-         bg-clip-text text-5xl font-extrabold uppercase tracking-[.1em] text-transparent`}
+         bg-clip-text md:text-5xl text-3xl sm font-extrabold uppercase tracking-[.1em] text-transparent`}
         >
           {pageName}
         </h1>
