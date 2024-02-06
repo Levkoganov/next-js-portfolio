@@ -10,9 +10,9 @@ const About = () => {
   return (
     <Bounded className="bg-slate-800" pageid={"about"}>
       <HorizontalRow pageName={"about"} />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <Description />
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col justify-between gap-8">
           <Technologies name="Core" techs={coreTech} Icon={FaFileCode} />
           <Technologies name="Secondary" techs={secondaryTech} Icon={FaRegFileCode} />
         </div>
