@@ -11,11 +11,9 @@ import flask from "@/public/flask.svg";
 export const firstName = "Lev";
 export const lastName = "Koganov";
 export const tagLine = "Full-Stack developer";
-// export const textDescription = `I've started coding in 2020. Since then i been building, scaling, developing and desining software for some pretty cool companies. I also teach people to paint online
-// (incase you've got an empty canvas layin' around 🎨). Let's connect!`;
 export const textDescription =
-  "Hi, I'm a Full Stack Developer with 3 years of hands-on experience designing, developing, and implementing applications and solutions using a range of technologies and programming languages.";
-export const navBarItems = ["About", "Project", "Experience", "Contact"];
+  "Hi, I'm a Full Stack Developer with 3 years of hands-on experience designing, developing and implementing applications and solutions using a range of technologies and programming languages.";
+export const navBarItems = ["About", "Projects", "Experience", "Contact"];
 export const coreTech = [
   "JavaScript",
   "TypeScript",
