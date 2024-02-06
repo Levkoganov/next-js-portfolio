@@ -17,7 +17,7 @@ const Bounded = React.forwardRef<HTMLDivElement, BoundedProps>(
         {...restProps}
       >
         <div className="m-auto w-full max-w-screen-2xl xl:py-0 py-10">
-          <div id={restProps.pageid} className="flex items-center min-h-[100vh]">
+          <div id={restProps.pageid} className="flex items-center min-h-[100vh] py-24">
             {children}
           </div>
         </div>
