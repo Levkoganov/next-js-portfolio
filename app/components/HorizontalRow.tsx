@@ -6,8 +6,7 @@ interface IPros {
 
 const HorizontalRow = ({ pageName }: IPros) => {
   return (
-    <div className="flex gap-4 items-center py-20 ">
-      {pageName && <div className="md:w-8 h-px bg-slate-500 opacity-70"></div>}
+    <div className="absolute items-center top-0 -translate-y-1/2 select-none">
       {pageName && (
         <h1
           className={`bg-gradient-to-tr from-slate-500 via-slate-200 to-slate-500
@@ -16,7 +15,6 @@ const HorizontalRow = ({ pageName }: IPros) => {
           {pageName}
         </h1>
       )}
-      <div className="w-full h-px bg-slate-500 opacity-70"></div>
     </div>
   );
 };
