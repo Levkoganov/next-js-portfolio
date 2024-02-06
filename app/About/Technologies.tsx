@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const TechSection = ({ name, techs, Icon }: IProps) => {
-  const gridClassName = `text-center font-bold text-base text bg-slate-800 p-2 rounded-xl
+  const gridClassName = `text-center font-bold text-base text bg-slate-900 p-2 rounded-md border border-slate-600
   ${
     name === "Core" ? "hover:bg-lime-700" : "hover:bg-yellow-400"
   } hover:text-black transform duration-100 select-none`;

@@ -24,7 +24,7 @@ const Sectors = ({
   technologies,
 }: IProps) => {
   return (
-    <div className="cardshadow join join-vertical w-full bg-slate-800 py-2 mb-4 border-x border-slate-950">
+    <div className="join join-vertical w-full bg-slate-900 py-2 mb-4 border-2 border-slate-700 rounded-md">
       <div className="collapse collapse-arrow join-item">
         <input type="radio" name="my-accordion-4" defaultChecked={id === 1} />
         <div className="collapse-title text-xl font-medium">
@@ -51,7 +51,7 @@ const Sectors = ({
           <div className="flex flex-wrap gap-3">
             {technologies.map((item) => (
               <span
-                className="text-center font-bold text-base text bg-slate-900 px-4 py-1 rounded-xl border-2 border-slate-500 select-none"
+                className="text-center font-semibold text-base bg-slate-800 px-4 py-1 rounded-md border border-slate-600 select-none"
                 key={item}
               >
                 {item}
