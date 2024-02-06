@@ -11,7 +11,7 @@ const Description = () => {
         className="bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500
            bg-clip-text text-3xl font-bold  tracking-[.1em] text-transparent mb-8"
       >
-        I`m a dedicated Full-Stack Software Developer based in Israel.
+        Dedicated Full-Stack Software Developer based in Israel.
       </h1>
       <p className="text-lg mb-6">
         As a Full-Stack Developer i possess an impressive arsenal of skills in Javascript,
@@ -23,7 +23,7 @@ const Description = () => {
       </p>
       <p className="text-lg mb-6">
         My expertise lies in crafting dynamic, engaging interfaces through writing clean
-        and optimize code and utilizing cutting-edge development tools and technquies.
+        and optimize code utilizing cutting-edge development tools and technquies.
       </p>
       <p className="text-lg mb-6">
         I am also a team player who thrives in collaborating with cross-functional teams
