@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { GoDownload } from "react-icons/go";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
