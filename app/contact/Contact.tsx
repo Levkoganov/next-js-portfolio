@@ -9,10 +9,10 @@ const Contact = () => {
     <Bounded className="border-none" pageid={"contact"}>
       <div className="flex flex-col items-center text-center w-full">
         <h1
-          className="bg-gradient-to-tr from-slate-500 via-slate-200 to-slate-500
-         bg-clip-text md:text-7xl text-5xl font-extrabold uppercase tracking-[.1em] text-transparent"
+          className="bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500
+         bg-clip-text md:text-7xl text-5xl font-extrabold uppercase tracking-[.1em] text-transparent opacity-80"
         >
-          Contact Me.
+          Contact Me
         </h1>
         <h1 className="text-lg mb-8">
           You can contact me at my <span className="underline">email</span> or through my{" "}
