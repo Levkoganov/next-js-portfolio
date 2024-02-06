@@ -1,5 +1,5 @@
 import { Float } from "@react-three/drei";
-import React, { useRef, useState, PointerEvent } from "react";
+import React, { useRef, useState } from "react";
 import { Vector3 } from "three";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
