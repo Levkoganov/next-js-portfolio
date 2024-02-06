@@ -1,5 +1,4 @@
 import About from "./about/About";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Contact from "./contact/Contact";
 import Experience from "./experience/Experience";
@@ -15,7 +14,6 @@ export default function Home() {
       <Projects />
       <Experience />
       <Contact />
-      <Footer />
     </main>
   );
 }
