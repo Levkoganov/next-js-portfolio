@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
+import { ActivePageContextProvider } from "./context/ActivePageContext";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -22,8 +23,10 @@ export default function RootLayout({
     >
       <body className={urbanist.className}>
         <div className="flex flex-row">
-          <Nav />
-          {children}
+          <ActivePageContextProvider>
+            <Nav />
+            {children}
+          </ActivePageContextProvider>
         </div>
       </body>
     </html>
