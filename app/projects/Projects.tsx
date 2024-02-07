@@ -1,22 +1,14 @@
 "use client";
 
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import Bounded from "../components/Bounded";
 import HorizontalRow from "../components/HorizontalRow";
 import Card from "./Card";
-import { projectsInfo } from "@/constants";
-import { useInView } from "react-intersection-observer";
-import { ActivePageContext } from "../context/ActivePageContext";
+import { projectsInfo } from "@/libs/constants";
+import { usePageInView } from "../hooks/usePageInView";
 
 const Projects = () => {
-  const { ref, inView } = useInView({ threshold: 0.6 });
-  const context = useContext(ActivePageContext);
-
-  useEffect(() => {
-    if (inView) {
-      context?.setActivePage("Projects");
-    }
-  }, [inView, context]);
+  const { ref } = usePageInView("Projects");
 
   return (
     <Bounded pageid={"projects"} ref={ref}>

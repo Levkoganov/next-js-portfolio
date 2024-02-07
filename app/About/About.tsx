@@ -1,24 +1,16 @@
 "use client";
 
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import Bounded from "../components/Bounded";
 import HorizontalRow from "../components/HorizontalRow";
 import { FaFileCode, FaRegFileCode } from "react-icons/fa";
-import { coreTech, secondaryTech } from "@/constants";
+import { coreTech, secondaryTech } from "@/libs/constants";
 import Technologies from "./Technologies";
 import Description from "./Description";
-import { useInView } from "react-intersection-observer";
-import { ActivePageContext } from "../context/ActivePageContext";
+import { usePageInView } from "../hooks/usePageInView";
 
 const About = () => {
-  const { ref, inView } = useInView({ threshold: 0.6 });
-  const context = useContext(ActivePageContext);
-
-  useEffect(() => {
-    if (inView) {
-      context?.setActivePage("About");
-    }
-  }, [context, inView]);
+  const { ref } = usePageInView("About");
 
   return (
     <Bounded className="bg-slate-800" pageid={"about"} ref={ref}>

@@ -1,22 +1,15 @@
 "use client";
 
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import Bounded from "../components/Bounded";
 import HorizontalRow from "../components/HorizontalRow";
 import Sectors from "./Sectors";
-import { experience } from "@/constants";
-import { useInView } from "react-intersection-observer";
-import { ActivePageContext } from "../context/ActivePageContext";
+import { experience } from "@/libs/constants";
+
+import { usePageInView } from "../hooks/usePageInView";
 
 const Experience = () => {
-  const { ref, inView } = useInView({ threshold: 0.6 });
-  const context = useContext(ActivePageContext);
-
-  useEffect(() => {
-    if (inView) {
-      context?.setActivePage("Experience");
-    }
-  }, [inView, context]);
+  const { ref } = usePageInView("Experience");
 
   return (
     <Bounded className="bg-slate-800" pageid={"experience"} ref={ref}>

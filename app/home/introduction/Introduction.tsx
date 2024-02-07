@@ -2,18 +2,16 @@
 
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Bounded from "../../components/Bounded";
 import RenderNameLetters from "./RenderNameLetters";
-import { firstName, lastName, tagLine, textDescription } from "../../../constants";
+import { firstName, lastName, tagLine, textDescription } from "../../../libs/constants";
 import Shapes from "../shapes/Shapes";
-import { useInView } from "react-intersection-observer";
-import { ActivePageContext } from "@/app/context/ActivePageContext";
+import { usePageInView } from "@/app/hooks/usePageInView";
 
 const Introduction = () => {
   const component = useRef(null);
-  const { ref, inView } = useInView({ threshold: 0.6 });
-  const context = useContext(ActivePageContext);
+  const { ref } = usePageInView(null);
 
   useGSAP(
     () => {
@@ -28,7 +26,7 @@ const Introduction = () => {
           ease: "elastic.out(1,0.3)",
           duration: 1.5,
           transformOrigin: "left top",
-          delay: 0.5,
+          delay: 0.2,
           stagger: {
             each: 0.1,
             from: "random",
@@ -51,13 +49,6 @@ const Introduction = () => {
     },
     { scope: component }
   );
-
-  useEffect(() => {
-    if (inView) {
-      context?.setActivePage(null);
-    }
-  }, [inView, context]);
-
   return (
     <Bounded ref={component}>
       <div

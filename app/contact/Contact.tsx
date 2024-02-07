@@ -1,22 +1,14 @@
 "use client";
 
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import Bounded from "../components/Bounded";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import Footer from "../components/Footer";
-import { useInView } from "react-intersection-observer";
-import { ActivePageContext } from "../context/ActivePageContext";
+import { usePageInView } from "../hooks/usePageInView";
 
 const Contact = () => {
-  const { ref, inView } = useInView({ threshold: 0.6 });
-  const context = useContext(ActivePageContext);
-
-  useEffect(() => {
-    if (inView) {
-      context?.setActivePage("Contact");
-    }
-  }, [inView, context]);
+  const { ref } = usePageInView("Contact");
 
   return (
     <Bounded className="border-none" pageid={"contact"} ref={ref}>
