@@ -7,6 +7,7 @@ import react from "@/public/react.svg";
 import aws from "@/public/aws.svg";
 import python from "@/public/python.svg";
 import flask from "@/public/flask.svg";
+import { IExperience } from "./types";
 
 export const firstName = "Lev";
 export const lastName = "Koganov";
@@ -89,17 +90,6 @@ export const projectsInfo = [
     link: "https://github.com/Levkoganov/mini_facebook",
   },
 ];
-
-interface IExperience {
-  id: number;
-  companyName: string;
-  workDuration: string;
-  title: string;
-  location: string;
-  description: string;
-  companywebsite?: string;
-  technologies: string[];
-}
 
 export const experience: IExperience[] = [
   {
