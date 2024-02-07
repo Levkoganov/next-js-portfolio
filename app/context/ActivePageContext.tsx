@@ -1,15 +1,6 @@
 "use client";
-
-import React, { ReactNode, useState, createContext } from "react";
-
-interface ActivePageContextProviderProps {
-  children: ReactNode;
-}
-
-interface ActivePageContextType {
-  activePage: string | null;
-  setActivePage: React.Dispatch<React.SetStateAction<string | null>>;
-}
+import { ActivePageContextType, ActivePageContextProviderProps } from "@/libs/types";
+import React, { useState, createContext } from "react";
 
 export const ActivePageContext = createContext<ActivePageContextType | null>(null);
 

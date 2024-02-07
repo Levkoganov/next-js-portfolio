@@ -2,11 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
-
-interface IStack {
-  icons: any[];
-  names: string[];
-}
+import { IStack } from "@/libs/types";
 
 interface IProps {
   header: string;
