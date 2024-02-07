@@ -8,7 +8,7 @@ interface IProps {
   rate: number;
   position: Vector3;
   soundEffects: HTMLAudioElement[];
-  geometry: any; // TODO: fix any
+  geometry: THREE.IcosahedronGeometry;
   materials: (THREE.MeshNormalMaterial | THREE.MeshStandardMaterial)[];
 }
 const Geometry = ({ rate, position, geometry, materials, soundEffects }: IProps) => {
@@ -21,7 +21,6 @@ const Geometry = ({ rate, position, geometry, materials, soundEffects }: IProps)
     return gsap.utils.random(materials);
   }
 
-  // TODO: fix any
   function handleClick(e: any) {
     const mesh = e.object;
 
