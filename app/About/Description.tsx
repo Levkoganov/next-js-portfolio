@@ -16,15 +16,15 @@ const Description = () => {
         </h1>
         <p className="text-lg mb-6">
           As a Full-Stack Developer i possess an impressive arsenal of skills in
-          Javascript, TypeScript, React, NodeJS, HTML, CSS and much more technologies.
+          Javascript, TypeScript, React, Node.JS, HTML, CSS and much more technologies.
         </p>
         <p className="text-lg mb-6">
-          I excel in designin scaling and maintaining responsive website that offer a
-          smooth user experience.
+          I excel in designing, scaling and maintaining responsive web applications that
+          offers a smooth user experience.
         </p>
         <p className="text-lg mb-6">
-          My expertise lies in crafting dynamic, engaging interfaces through writing clean
-          and optimize code utilizing cutting-edge development tools and technquies.
+          My expertise lies in writing clean and efficient code utilizing cutting-edge
+          development tools and technquies.
         </p>
         <p className="text-lg mb-6">
           I am also a team player who thrives in collaborating with cross-functional teams
