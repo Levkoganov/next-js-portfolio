@@ -48,7 +48,7 @@ export const projectsInfo = [
     projectId: 1,
     header: "Discord Chat - Bot",
     description:
-      "Designed to enchance user experience within Discord server. Developed with foucus on flexibility scalability, and user engagement, offers a diverse range of features tailored to meet the needs of varius Discord communities. It`s a versatile Discord bot that's currently running and utilized by a thriving community of 500+ active users.",
+      "Designed to enchance user experience within Discord server. Developed with foucus on flexibility, scalability and user engagement. Offers a diverse range of features tailored to meet the needs of varius Discord communities. It`s a versatile Discord bot that's currently running and utilized by a thriving community of 500+ active users.",
     stack: {
       icons: [nodejs, typescript, mongodb, discordjs],
       names: ["Node.JS", "TypeScript", "MongoDB", "Discord.JS"],
@@ -81,7 +81,7 @@ export const projectsInfo = [
     projectId: 4,
     header: "Social Media - Application",
     description:
-      "Social media platform designed to connect users with their friends, family, and interests in a dynamic and engaging environment. The platform offers a range of features to facilitate communication, content sharing, and community building.",
+      "Social media platform designed to connect users with their friends, family and interests in a dynamic and engaging environment. The platform offers a range of features to facilitate communication, content sharing and community building.",
     stack: {
       icons: [nodejs, javascript, mongodb, react],
       names: ["Node.JS", "JavaScript", "MongoDB", "React"],
@@ -109,7 +109,7 @@ export const experience: IExperience[] = [
     title: "Fullstack Developer",
     location: "Israel",
     description:
-      "Developing a web gaming system from scratch using a high veraity of technologies. Workig closly with the CRM team, implementing web serivies, creating an interactive interface and REST API.",
+      "Developed a web gaming system from scratch using a high veraity of technologies. Worked closely with the CRM team, implementing web serivies, creating an interactive interface and REST API.",
     companywebsite: "https://www.playsmart.co.il/games-home/",
     technologies: [
       "Node.JS",
@@ -154,7 +154,7 @@ export const experience: IExperience[] = [
     title: "Frontend Developer",
     location: "Israel",
     description:
-      "Developing a interface from scratch for a Bank clearing center. Working on a tight sceduale according to specification.",
+      "Developed a interface from scratch for a Bank clearing center. Worked on a tight sceduale according to specification.",
     technologies: ["React", "TypeScript", "Mobx", "Figma", "GitLab", "Git", "Jira"],
   },
 ];
