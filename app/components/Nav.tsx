@@ -1,6 +1,6 @@
 "use client";
 
-import { navBarItems } from "@/constants";
+import { navBarItems } from "@/libs/constants";
 import clsx from "clsx";
 import Link from "next/link";
 import React, { useContext } from "react";
@@ -13,8 +13,8 @@ const Nav = () => {
     <div className="bg-slate-950 w-20">
       <nav className="sticky top-0 left-0 z-20 flex flex-col items-center">
         <Link
-          onClick={() => context?.setActivePage("")}
-          href="#home"
+          onClick={() => context?.setActivePage(null)}
+          href=""
           className="flex justify-center items-center font-black h-20 w-full text-2xl tracking-tighter bg-slate-800"
         >
           L<span className="text-yellow-500 font-black">.</span>K
