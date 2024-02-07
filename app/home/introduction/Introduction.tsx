@@ -1,14 +1,19 @@
 "use client";
+
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import React, { useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import Bounded from "../../components/Bounded";
 import RenderNameLetters from "./RenderNameLetters";
 import { firstName, lastName, tagLine, textDescription } from "../../../constants";
 import Shapes from "../shapes/Shapes";
+import { useInView } from "react-intersection-observer";
+import { ActivePageContext } from "@/app/context/ActivePageContext";
 
 const Introduction = () => {
   const component = useRef(null);
+  const { ref, inView } = useInView({ threshold: 0.6 });
+  const context = useContext(ActivePageContext);
 
   useGSAP(
     () => {
@@ -47,9 +52,16 @@ const Introduction = () => {
     { scope: component }
   );
 
+  useEffect(() => {
+    if (inView) {
+      context?.setActivePage(null);
+    }
+  }, [inView, context]);
+
   return (
     <Bounded ref={component}>
       <div
+        ref={ref}
         id="home"
         className="grid grid-cols-1 md:grid-cols-2 items-center scroll-mt-[100rem]"
       >
