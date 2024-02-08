@@ -51,7 +51,7 @@ const Sectors = ({
           <div className="flex flex-wrap gap-3">
             {technologies.map((item) => (
               <span
-                className="text-center font-semibold text-base bg-slate-800 px-4 py-1 rounded-md border border-slate-600 select-none"
+                className="text-center text-base bg-slate-800 px-4 py-1 rounded-md border border-slate-600 select-none"
                 key={item}
               >
                 {item}
