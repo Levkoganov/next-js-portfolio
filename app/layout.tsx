@@ -17,10 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="!scroll-smooth focus:scroll-auto bg-slate-900 text-slate-100"
-    >
+    <html lang="en" className="!scroll-smooth bg-slate-900 text-slate-100 ">
       <body className={urbanist.className}>
         <div className="flex flex-row">
           <ActivePageContextProvider>
