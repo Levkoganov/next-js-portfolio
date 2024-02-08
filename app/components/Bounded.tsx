@@ -13,7 +13,7 @@ const Bounded = React.forwardRef<HTMLDivElement, BoundedProps>(
     return (
       <Comp
         ref={ref}
-        className={clsx("relative px-4 md:px-6 border-b-2 border-slate-950", className)}
+        className={clsx("relative px-4 md:px-6 border-b-2 border-slate-900", className)}
         {...restProps}
       >
         <div className="m-auto w-full max-w-screen-2xl">

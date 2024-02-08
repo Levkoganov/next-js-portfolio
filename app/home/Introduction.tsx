@@ -2,14 +2,17 @@
 
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import React, { useRef } from "react";
-import Bounded from "../../components/Bounded";
+import React, { useRef, useState } from "react";
+import Bounded from "../components/Bounded";
 import RenderNameLetters from "./RenderNameLetters";
-import { firstName, lastName, tagLine, textDescription } from "../../../libs/constants";
-import Shapes from "../shapes/Shapes";
+import { firstName, lastName, tagLine, textDescription } from "../../libs/constants";
 import { usePageInView } from "@/app/hooks/usePageInView";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import clsx from "clsx";
+import Link from "next/link";
 
 const Introduction = () => {
+  const [onHover, setOnHover] = useState(false);
   const component = useRef(null);
   const { ref } = usePageInView(null);
 
@@ -49,20 +52,21 @@ const Introduction = () => {
     },
     { scope: component }
   );
+
   return (
-    <Bounded ref={component}>
+    <Bounded ref={component} className="mainbackground">
       <div
         ref={ref}
         id="home"
-        className="grid grid-cols-1 md:grid-cols-2 items-center scroll-mt-[100rem]"
+        // className="grid grid-cols-1 md:grid-cols-2 items-center scroll-mt-[100rem]"
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0"
       >
-        <Shapes />
-        <div className="col-start-1 md:row-start-1 select-none">
+        <div className="flex flex-col">
           <h1
-            className="mb-8 xl:text-[clamp(3rem,15vmin,15rem)] text-8xl font-extrabold leading-none tracking-tighter"
+            className="mb-8 xl:text-[clamp(3rem,12vmin,12rem)] text-8xl font-extrabold leading-none tracking-tighter"
             aria-label={`${firstName} ${lastName}`}
           >
-            <span className="block text-slate-300 ">
+            <span className=" text-slate-300 pr-6 block md:inline-block">
               <RenderNameLetters name={firstName} groupName={"firstName"} />
             </span>
             <span className="-mt-[.2em] text-slate-500">
@@ -79,6 +83,22 @@ const Introduction = () => {
           <span className="self-description text-slate-300 block mt-3 text-xl tracking-tighter opacity-0">
             {textDescription}
           </span>
+        </div>
+
+        <div className=" flex flex-col justify-center items-center">
+          <Link
+            href={"#about"}
+            onMouseOver={() => setOnHover(true)}
+            onMouseOut={() => setOnHover(false)}
+            className="relative btn btn-wide btn-lg btn-outline btn-warning font-normal text-xl border-2 rounded-none"
+          >
+            Scroll Down
+            <span>
+              <MdKeyboardDoubleArrowDown
+                className={clsx({ "animate-bounce": onHover === true })}
+              />
+            </span>
+          </Link>
         </div>
       </div>
     </Bounded>

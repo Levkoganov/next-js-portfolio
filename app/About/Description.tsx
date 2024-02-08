@@ -6,8 +6,8 @@ import nextSvg from "../favicon.ico";
 
 const Description = () => {
   return (
-    <div className="flex justify-center items-center col-start-1 md:row-start-1">
-      <div className="cardshadow bg-slate-900 rounded-md border border-slate-900 px-5 py-5">
+    <div className="cardshadow bg-slate-900 rounded-md border border-slate-950 py-12">
+      <div className="px-8">
         <h1
           className="bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500
            bg-clip-text text-3xl font-bold  tracking-[.1em] text-transparent mb-8"
@@ -31,7 +31,7 @@ const Description = () => {
           to produce outstanding Web applications and software.
         </p>
 
-        <div className="flex py-8">
+        <div className="flex flex-wrap py-8">
           <span className="mr-5 font-semibold text-slate-200">Portfolio Stack</span>
           <span className="border-slate-600 border-r-2"></span>
           <div className="flex gap-5 items-center mx-5">

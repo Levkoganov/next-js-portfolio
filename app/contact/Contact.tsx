@@ -11,7 +11,7 @@ const Contact = () => {
   const { ref } = usePageInView("Contact");
 
   return (
-    <Bounded className="border-none" pageid={"contact"} ref={ref}>
+    <Bounded className="mainbackground border-none" pageid={"contact"} ref={ref}>
       <div className="flex flex-col items-center text-center w-full">
         <h1
           className="bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500

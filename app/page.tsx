@@ -2,7 +2,7 @@ import About from "./about/About";
 import Header from "./components/Header";
 import Contact from "./contact/Contact";
 import Experience from "./experience/Experience";
-import Introduction from "./home/introduction/Introduction";
+import Introduction from "./home/Introduction";
 import Projects from "./projects/Projects";
 
 export default function Home() {

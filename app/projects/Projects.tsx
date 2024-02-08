@@ -11,7 +11,7 @@ const Projects = () => {
   const { ref } = usePageInView("Projects");
 
   return (
-    <Bounded pageid={"projects"} ref={ref}>
+    <Bounded className="mainbackground" pageid={"projects"} ref={ref}>
       <HorizontalRow pageName={"projects"} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projectsInfo.map(({ projectId, header, description, stack, link }) => (
