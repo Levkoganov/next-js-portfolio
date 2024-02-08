@@ -9,7 +9,7 @@ const Footer = () => {
           About this website:
           <span>
             built with React & Next.js (App Router), TypeScript, Tailwind & daisyUI CSS,
-            Three.js, GSAP, Vercel hosting.
+            GSAP, Vercel hosting.
           </span>
         </span>
       </p>
