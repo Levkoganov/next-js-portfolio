@@ -13,7 +13,6 @@ const Nav = () => {
     <div className="bg-slate-950 w-20">
       <nav className="sticky top-0 left-0 z-20 flex flex-col items-center">
         <Link
-          onClick={() => context?.setActivePage(null)}
           href=""
           className="flex justify-center items-center font-black h-20 w-full text-2xl tracking-tighter bg-slate-800"
         >
@@ -22,7 +21,6 @@ const Nav = () => {
         {navBarItems.map((page) => (
           <Link
             key={page}
-            onClick={() => context?.setActivePage(page)}
             href={`#${page.toLowerCase()}`}
             style={{ writingMode: "vertical-lr" }}
             className={clsx(
