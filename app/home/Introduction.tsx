@@ -19,6 +19,8 @@ const Introduction = () => {
   useGSAP(
     () => {
       const tl = gsap.timeline();
+      const tl2 = gsap.timeline();
+
       tl.fromTo(
         ".name-animation",
         { x: -100, rotate: -10 },
@@ -29,7 +31,7 @@ const Introduction = () => {
           ease: "elastic.out(1,0.3)",
           duration: 1.5,
           transformOrigin: "left top",
-          delay: 0.2,
+          // delay: 0.2,
           stagger: {
             each: 0.1,
             from: "random",
@@ -49,6 +51,12 @@ const Introduction = () => {
         { opacity: 1, x: 0, duration: 0.8 },
         "-=1"
       );
+
+      tl2.fromTo(
+        ".scrolldownlink",
+        { y: -100, opacity: 0 },
+        { opacity: 1, y: 0, duration: 1, delay: 1.5 }
+      );
     },
     { scope: component }
   );
@@ -58,7 +66,6 @@ const Introduction = () => {
       <div
         ref={ref}
         id="home"
-        // className="grid grid-cols-1 md:grid-cols-2 items-center scroll-mt-[100rem]"
         className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0"
       >
         <div className="flex flex-col">
@@ -66,7 +73,7 @@ const Introduction = () => {
             className="mb-8 xl:text-[clamp(3rem,12vmin,12rem)] text-8xl font-extrabold leading-none tracking-tighter"
             aria-label={`${firstName} ${lastName}`}
           >
-            <span className=" text-slate-300 pr-6 block md:inline-block">
+            <span className="text-slate-300 pr-6 block md:inline-block">
               <RenderNameLetters name={firstName} groupName={"firstName"} />
             </span>
             <span className="-mt-[.2em] text-slate-500">
@@ -85,19 +92,17 @@ const Introduction = () => {
           </span>
         </div>
 
-        <div className=" flex flex-col justify-center items-center">
+        <div className="scrolldownlink opacity-0 flex flex-col justify-center items-center ">
           <Link
             href={"#about"}
             onMouseOver={() => setOnHover(true)}
             onMouseOut={() => setOnHover(false)}
-            className="relative btn btn-wide btn-lg btn-outline btn-warning font-normal text-xl border-2 rounded-none"
+            className="btn btn-wide btn-lg btn-outline btn-warning font-normal text-xl border-2 rounded-none"
           >
             Scroll Down
-            <span>
-              <MdKeyboardDoubleArrowDown
-                className={clsx({ "animate-bounce": onHover === true })}
-              />
-            </span>
+            <MdKeyboardDoubleArrowDown
+              className={clsx({ "animate-bounce": onHover === true })}
+            />
           </Link>
         </div>
       </div>
