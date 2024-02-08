@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth bg-slate-900 text-slate-100 ">
       <body className={urbanist.className}>
-        <div className="flex flex-row">
+        <div className="flex flex-row font-main">
           <ActivePageContextProvider>
             <Nav />
             {children}
