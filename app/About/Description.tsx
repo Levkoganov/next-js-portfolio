@@ -32,7 +32,7 @@ const Description = () => {
         </p>
 
         <div className="flex flex-wrap py-8">
-          <span className="mr-5 font-semibold text-slate-200">Portfolio Stack</span>
+          <span className="mr-5 text-slate-200">Portfolio Stack</span>
           <span className="border-slate-600 border-r-2"></span>
           <div className="flex gap-5 items-center mx-5">
             <SiJavascript size={20} color="gold" />
