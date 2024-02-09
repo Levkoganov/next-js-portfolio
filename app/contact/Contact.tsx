@@ -20,7 +20,7 @@ const Contact = () => {
           Contact Me
         </h1>
         <h1 className="text-lg mb-8">
-          You can contact me at my <span className="underline">email</span> or through my{" "}
+          You can contact me at my email or through my{" "}
           <Link
             className="underline text-yellow-500"
             href={"https://www.linkedin.com/in/lev-koganov-b4a045211/"}
@@ -35,7 +35,7 @@ const Contact = () => {
           <MdEmail />
           levkoganov.dev@gmail.com
         </h1>
-        <button className="btn btn-wide btn-outline  text-xl">Download Resume</button>
+        <button className="btn btn-outline btn-wide text-xl">Download Resume</button>
 
         <Footer />
       </div>
