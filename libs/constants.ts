@@ -99,7 +99,7 @@ export const experience: IExperience[] = [
     title: "Fullstack Developer",
     location: "Israel",
     description:
-      "Developed a web gaming system from scratch using a high veraity of technologies. Worked closely with the CRM team, implementing web serivies, creating an interactive interface and REST API.",
+      "Developed a web gaming system from scratch using a high variety of technologies. Worked closely with the CRM team, implementing web services, creating an interactive interface and REST API.",
     companywebsite: "https://www.playsmart.co.il/games-home/",
     technologies: [
       "Node.JS",
@@ -144,7 +144,7 @@ export const experience: IExperience[] = [
     title: "Frontend Developer",
     location: "Israel",
     description:
-      "Developed a interface from scratch for a Bank clearing center. Worked on a tight sceduale according to specification.",
+      "Developed an interface from scratch for a Bank clearing center. Worked on a tight sceduale according to specification.",
     technologies: ["React", "TypeScript", "Mobx", "Figma", "GitLab", "Git", "Jira"],
   },
 ];

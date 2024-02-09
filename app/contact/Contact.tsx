@@ -33,7 +33,7 @@ const Contact = () => {
         </h1>
         <h1 className="flex gap-2 text-2xl leading-none tracking-tighter mb-2">
           <MdEmail />
-          Example@gmail.com
+          levkoganov.dev@gmail.com
         </h1>
         <button className="btn btn-wide btn-outline  text-xl">Download Resume</button>
 
