@@ -49,7 +49,7 @@ const Card = ({ header, description, stack, link }: IProps) => {
 
         <div className="card-actions">
           <Link
-            className="btn btn-outline btn-wide bg-slate-900"
+            className="btn btn-outline btn-wide text-natural-300 bg-slate-900"
             href={link}
             rel="noopener noreferrer"
             target="_blank"
