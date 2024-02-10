@@ -31,7 +31,6 @@ const Introduction = () => {
           ease: "elastic.out(1,0.3)",
           duration: 1.5,
           transformOrigin: "left top",
-          // delay: 0.2,
           stagger: {
             each: 0.1,
             from: "random",
@@ -55,7 +54,7 @@ const Introduction = () => {
       tl2.fromTo(
         ".scrolldownlink",
         { y: -100, opacity: 0 },
-        { opacity: 1, y: 0, duration: 1, delay: 1.5 }
+        { opacity: 1, y: 0, duration: 1, delay: 2 }
       );
     },
     { scope: component }

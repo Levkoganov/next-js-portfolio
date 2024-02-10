@@ -30,10 +30,16 @@ const Header = () => {
         </Link>
       </div>
 
-      <button className="btn btn-outline btn-warning">
+      <Link
+        href="/resume.pdf"
+        download
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-outline btn-warning"
+      >
         My Resume
         <GoDownload size={"18px"} />
-      </button>
+      </Link>
     </header>
   );
 };

@@ -35,7 +35,16 @@ const Contact = () => {
           <MdEmail />
           levkoganov.dev@gmail.com
         </h1>
-        <button className="btn btn-outline btn-wide text-xl">Download Resume</button>
+
+        <Link
+          href="/resume.pdf"
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-outline btn-wide text-xl"
+        >
+          Download Resume
+        </Link>
 
         <Footer />
       </div>
