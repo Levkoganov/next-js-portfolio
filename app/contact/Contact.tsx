@@ -37,7 +37,9 @@ const Contact = () => {
         </h1>
 
         <a href="resume.pdf" download="resume" target="_blank">
-          <button className="btn btn-outline btn-wide text-xl">Download Resume</button>
+          <button className="btn btn-outline btn-wide text-slate-300 hover:bg-slate-300 hover:text-slate-950 text-xl">
+            Download Resume
+          </button>
         </a>
 
         <Footer />
