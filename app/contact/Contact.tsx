@@ -36,13 +36,8 @@ const Contact = () => {
           levkoganov.dev@gmail.com
         </h1>
 
-        <a
-          href="resume.pdf"
-          download="resume"
-          target="_blank"
-          className="btn btn-outline btn-wide text-neutral-300 text-xl"
-        >
-          Download Resume
+        <a href="resume.pdf" download="resume" target="_blank">
+          <button className="btn btn-outline btn-wide text-xl">Download Resume</button>
         </a>
 
         <Footer />

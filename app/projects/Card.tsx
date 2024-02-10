@@ -48,14 +48,11 @@ const Card = ({ header, description, stack, link }: IProps) => {
         </div>
 
         <div className="card-actions">
-          <Link
-            className="btn btn-outline btn-wide text-natural-300 bg-slate-900"
-            href={link}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            GitHub <FaGithub size={"22px"} />
-          </Link>
+          <a href={link} target="_blank">
+            <button className="btn btn-outline btn-wide bg-slate-900">
+              GitHub <FaGithub size={"22px"} />
+            </button>
+          </a>
         </div>
       </div>
     </div>
