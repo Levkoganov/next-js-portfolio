@@ -69,7 +69,7 @@ const Introduction = () => {
       >
         <div className="flex flex-col">
           <h1
-            className="mb-8 xl:text-[clamp(3rem,12vmin,12rem)] text-8xl font-extrabold leading-none tracking-tighter"
+            className="mb-8 md:text-[clamp(3rem,12vmin,12rem)] text-7xl font-extrabold leading-none tracking-tighter"
             aria-label={`${firstName} ${lastName}`}
           >
             <span className="text-slate-300 pr-6 block md:inline-block">
