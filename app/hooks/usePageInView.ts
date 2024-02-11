@@ -4,8 +4,8 @@ import { useContext, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { ActivePageContext } from "../context/ActivePageContext";
 
-export function usePageInView(pageName: string | null) {
-  const { ref, inView } = useInView({ threshold: 0.6 });
+export function usePageInView(pageName: string | null, pageViewSize?: number) {
+  const { ref, inView } = useInView({ threshold: pageViewSize ?? 0.6 });
   const context = useContext(ActivePageContext);
 
   useEffect(() => {
