@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         main: ["Signika", "sans-serif"],
       },
+      screens: {
+        betterhover: { raw: "(hover: hover)" },
+      },
     },
   },
   plugins: [require("daisyui")],

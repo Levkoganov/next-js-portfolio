@@ -24,7 +24,7 @@ const Nav = () => {
             href={`#${page.toLowerCase()}`}
             style={{ writingMode: "vertical-lr" }}
             className={clsx(
-              "flex w-full items-center	py-6 opacity-50 text-lg tracking-wide hover:opacity-100 hover:bg-slate-900 hover:border-r border-yellow-500",
+              "flex w-full items-center	py-6 opacity-50 text-lg tracking-wide hover:betterhover:opacity-100 hover:betterhover:bg-slate-900 hover:betterhover:border-r border-yellow-500",
               {
                 "opacity-[1] bg-slate-900 border-r": context?.activePage === page,
               }
